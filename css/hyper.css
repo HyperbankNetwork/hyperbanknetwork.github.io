@@ -1,0 +1,253 @@
+/*
+
+RESETS
+
+*/
+html, body {
+    background: #F2F2F2;
+    text-align: center;
+}
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+a {
+    text-decoration: none;
+    color: #3CA3D6;
+    font-weight: bold;
+}
+a.logo {
+    display: inline-block;
+    position: relative;
+    color: #757575;
+    width: 268px;
+    height: 49px;
+    background: url(../img/logo.png) no-repeat;
+    text-indent: -999em;
+    margin-left: -30px;
+}
+.offside {
+    display: block;
+    position: relative;
+    padding-left: 400px;
+    text-align: center;
+}
+.offside.intro {
+    margin-bottom: 10px;
+}
+.btn-primary {
+    background: #FFFF00;
+    border: 1px solid #333;
+    color: #333;
+    text-transform: uppercase;
+}
+.btn-primary:hover {
+    background: #333;
+    border-color: #000;
+    color: #FFF;
+}
+
+/*
+
+VILLAGE
+
+*/
+#village {
+    display: block;
+    position: relative;
+    width: 100%;
+    padding: 20px 20px 60px;
+    background: url(../img/bg.jpg) no-repeat;
+    background-position: 0 -100px;
+    background-size: cover;
+    min-height: auto;
+    margin-bottom: 30px;
+}
+#message {
+    display: block;
+    position: relative;
+    background: #3CA3D6;
+    margin: 80px -20px 100px;
+    padding: 30px 20px 70px;
+    border-top: 2px solid #000;
+    border-bottom: 2px solid #000;
+    opacity: 0.8;
+}
+#message h1 {
+    text-transform: lowercase;
+    font-size: 33px;
+    color: #FFF;
+    text-shadow: 1px 2px 3px #444;
+}
+
+/*
+
+HAND
+
+*/
+#hand {
+    display: block;
+    position: absolute;
+    width: 469px;
+    height: 749px;
+    top: 16px;
+    left: 0;
+    background: url(../img/hand.png) no-repeat;
+}
+#social {
+    display: block;
+    position: absolute;
+    width: 250px;
+    height: 75px;
+    bottom: 145px;
+    left: 120px;
+    text-align: center;
+}
+#social a {
+    display: inline-block;
+    vertical-align: top;
+    text-indent: -999em;
+    position: relative;
+    height: 75px;
+    width: 44px;
+    border-left: 1px solid transparent;
+    border-right: 1px solid transparent;
+}
+#social a:hover {
+    background: #FFF;
+    border-color: #CCC;
+    opacity: 0.5;
+}
+
+/*
+
+FORMS
+
+*/
+.offside.intro p,
+form#signup .wrapper {
+    display: block;
+    position: relative;
+    padding: 0 5px;
+}
+
+/*
+
+APP
+
+*/
+#app {
+    display: block;
+    position: absolute;
+    background: #FFF;
+    width: 247px;
+    height: 440px;
+    margin: 85px 0 0 123px;
+}
+#app iframe {
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #3CA3D6;
+    padding: 0;
+    margin: 0;
+}
+html.app, body.app {
+    background: #3CA3D6;
+}
+body.app img {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+/*
+
+SLEAVE
+
+*/
+#sleave {
+    display: block;
+    position: absolute;
+    top: 175px;
+    left: 0;
+    width: 340px;
+    background: #EEE;
+    border-right: 2px solid #999;
+    height: 100%;
+    bottom: 0;
+    bottom: 0;
+    height: auto;
+}
+#hand-wrapper {
+    display: block;
+    position: relative;
+}
+
+/*
+
+RESPONSIVENESS
+
+*/
+@media only screen and (max-width : 1200px) {
+    .offside.intro p,
+    form#signup .wrapper {
+        padding: 0 10px;
+    }
+    #message {
+        padding-bottom: 90px;
+        margin-bottom: 0;
+    }
+    #village {
+        padding-bottom: 110px;
+        margin-bottom: 10px;
+    }
+    #message h1 {
+        font-size: 55px;
+        font-weight: normal;
+    }
+}
+@media only screen and (max-width : 1024px) {
+    #hand, 
+    #sleave {
+        display: none;
+    }
+    #message {
+        padding: 0px 30px 50px;
+        margin: 30px -30px;
+    }
+    #message h1 {
+        font-size: 50px;
+    }
+    .offside {
+        padding: 10px;
+    }
+    .offside.intro {
+        padding-bottom: 40px;
+    }
+    #hand {
+        display: block;
+        position: relative;
+        left: 50%;
+        margin: -70px 0 0 -245px;
+    }
+}
+@media only screen and (max-width : 768px) {
+    #message {
+        margin: 10px -30px;
+        border: none;
+    }
+    #village {
+        padding: 10px;
+        background: #3CA3D6;
+        border-bottom: 2px solid #333;
+    }
+    .offside.intro p {
+        font-size: 20px;
+        line-height: 30px;
+        margin-bottom: 30px;
+    }
+}
